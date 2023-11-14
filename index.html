@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo list</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/reset.css">
+</head>
+<body>
+    <section class="tasks-add-param">
+        <div class="container">
+            <div class="logo">
+                <a href="#!"><img src="./imgs/logo/logo.png" alt=""></a>
+            </div>
+            <div class="input-task-text">
+                <input id="task-name-input" type="text" placeholder="Write something" required maxlength="40">
+                <button id="create-task-button">Push!</button>
+            </div>
+            <div class="task-param">
+                <h2 class="task-param-title">Options</h2>
+                <hr style="border: 1px solid black;margin-top: 5px;">
+                <div class="task-param-important">
+                    <h3>Important task?</h3>
+                    <label for="group-1">Yes <input id="yes-box" type="radio" name="group-1" required></label>
+                    <label for="group-1">No <input id="no-box" type="radio" name="group-1" required></label>
+                </div>
+                <div class="task-param-deadlines">
+                    <h3>Deadline: </h3>
+                    <input id="deadlineDays" type="number" min="1" max="365" required>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="task-list-sect">
+        <div class="container">
+            <div class="task-list-title">
+                <h2>Task list:</h2>
+                <div class="no-tasks-title">
+                    <h2>No active tasks</h2>
+                </div>
+            </div>
+            <div class="task-list">
+                
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
